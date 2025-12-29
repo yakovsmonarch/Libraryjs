@@ -1,6 +1,8 @@
 class HelloWorld {
     sayHello() {
-        console.log("Привет из внешней библиотеки.")
+        console.log("Привет из внешней библиотеки.");
+        const data = new Data();
+        console.log(data);
     }
 }
 
