@@ -10,4 +10,4 @@ class HelloWorld {
     }
 }
 
-// https://cdn.jsdelivr.net/gh/yakovsmonarch/Libraryjs@main/hello.js
+// https://cdn.jsdelivr.net/gh/yakovsmonarch/Libraryjs@dev/hello.js должно обновляться каждые 10 минут.
