@@ -6,4 +6,4 @@ class HelloWorld {
     }
 }
 
-// https://cdn.jsdelivr.net/gh/yakovsmonarch/Libraryjs/hello.js
+// https://cdn.jsdelivr.net/gh/yakovsmonarch/Libraryjs@main/hello.js
