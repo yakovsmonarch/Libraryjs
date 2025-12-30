@@ -8,6 +8,13 @@ class HelloWorld {
         '#DDA0DD', // Фиолетовый
         '#FFA07A'  // Лососевый
     ];
+    #element;
+    #milliseconds;
+
+    constructor(element, milliseconds = 1000) {
+        this.#element = element;
+        this.#milliseconds = milliseconds;
+    }
 
     async sayHello() {
         console.log("Привет из внешней библиотеки.");
@@ -19,10 +26,10 @@ class HelloWorld {
 
     async #changeColor() {
         for (let i = 0; i < this.#colors.length; i++) {
-            document.body.style.backgroundColor = this.#colors[i];
-            await new Promise(resolve => setTimeout(resolve, 300));
+            this.#element.style.backgroundColor = this.#colors[i];
+            await new Promise(resolve => setTimeout(resolve, this.#milliseconds));
 
-            if(i == this.#colors.length - 1){
+            if (i == this.#colors.length - 1) {
                 i = 0;
             }
         }
