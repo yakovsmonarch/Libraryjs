@@ -21,7 +21,7 @@ class HelloWorld {
         const date = new Date();
         console.log(date);
 
-        await this.#changeColor();
+        // await this.#changeColor();
     }
 
     async #changeColor() {
